@@ -4,6 +4,7 @@ from models.base_model import BaseModel, Base
 from sqlalchemy import Column, Integer, String, Float
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
+import os
 
 
 class Place(BaseModel, Base):
@@ -32,4 +33,16 @@ class Place(BaseModel, Base):
     price_by_night = Column(Integer, nullable=False, default=0)
     latitude = Column(Float, nullable=True)
     longitude = Column(Float, nullable=True)
+    
     reviews = relationship("Review", backref="place", cascade="all, delete")
+
+    @property
+    def reviews(self):
+        """
+        """
+        review_dict = {}
+        objs_ = models.storage.all(Review)
+        for key, value in objs_.items():
+            if value.place_id == self.id:
+                review_dict[key] = value
+        return review_dict

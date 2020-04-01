@@ -6,8 +6,7 @@ from sqlalchemy import Column, Integer, String, Float, Table
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
 
-metadata = Base.metadata
-place_amenity = Table('place_amenity', metadata,
+place_amenity = Table('place_amenity', Base.metadata,
                       Column('place_id',
                              String(60),
                              ForeignKey('places.id'),
@@ -47,14 +46,12 @@ class Place(BaseModel, Base):
     latitude = Column(Float, nullable=True)
     longitude = Column(Float, nullable=True)
     amenity_ids = []
-
-    if os.getenv('HBNB_TYPE_STORAGE') == 'db':
-        reviews = relationship("Review",
-                               backref="place", cascade="all, delete")
-        amenities = relationship("Amenity",
-                                 secondary=place_amenity,
-                                 viewonly=False)
-    else:
+    reviews = relationship("Review",
+                           backref="place", cascade="all, delete")
+    amenities = relationship("Amenity",
+                             secondary=place_amenity,
+                             viewonly=False)
+    if os.getenv('HBNB_TYPE_STORAGE') != 'db':
         @property
         def reviews(self):
             """returns the list of Review instances"""

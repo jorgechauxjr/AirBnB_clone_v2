@@ -58,6 +58,8 @@ Ex:
 ### Environment
 - Language: Python3
 - OS: Ubuntu 14.04 LTS
+* Style guidelines: [PEP 8 (version 1.7)](https://www.python.org/dev/peps/pep-0008/) \|| [Google Style Python Docstrings](http://sphinxcontrib-napoleon.readthedocs.io/\
+en/l\atest/example_google.html)
 
 ### Authors
 Initial Authors (V1):

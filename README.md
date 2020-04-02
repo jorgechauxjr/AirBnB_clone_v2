@@ -1,4 +1,4 @@
-# HBNB
+# HBNB AirBnB Clone V2
 
 This is the console /command interpreter for the Holberton Airbnb clone project. The console can be used to store objects in and retrieve objects from a JSON.
 
@@ -52,3 +52,11 @@ Ex:
 Additionally, the console supports `<class name>.<command>(<parameters>)` syntax.
 Ex:
 `City.show(my_city_id)`
+
+### Authors
+Initial Authors (V1):
+* Kevin Yook | [GitHub](https://github.com/yook00627) | [Twitter](https://twitter.com/yook00627) |
+
+Authors (V2)
+* Arturo Victoria Rincón | [GitHub](https://github.com/arvicrin) | [Twitter](https://twitter.com/arvicrin) |
+* Jorge Chaux Jr | [GitHub](https://github.com/jorgechauxjr) | [Twitter](https://twitter.com/jorgechauxjr) |

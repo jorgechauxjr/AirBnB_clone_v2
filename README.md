@@ -57,6 +57,7 @@ Ex:
 
 ### Environment
 - Language: Python3
+- OS: Ubuntu 14.04 LTS
 
 ### Authors
 Initial Authors (V1):

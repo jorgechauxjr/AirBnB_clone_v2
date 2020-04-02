@@ -1,4 +1,4 @@
-![](https://camo.githubusercontent.com/9ebbf60e208b031d4dcf7db6ffc19fe0339d0ff3/68747470733a2f2f692e6962622e636f2f64354e38354e682f68626e622e706e67)
+B![](https://camo.githubusercontent.com/9ebbf60e208b031d4dcf7db6ffc19fe0339d0ff3/68747470733a2f2f692e6962622e636f2f64354e38354e682f68626e622e706e67)
 
 # HBNB AirBnB Clone V2
 
@@ -62,4 +62,5 @@ Initial Authors (V1):
 Authors (V2)
 * Arturo Victoria Rincón | [GitHub](https://github.com/arvicrin) | [Twitter](https://twitter.com/arvicrin) |
 * Jorge Chaux Jr | [GitHub](https://github.com/jorgechauxjr) | [Twitter](https://twitter.com/jorgechauxjr) |
-  *Holberton School Participants - Cohort 10*
+
+*Holberton School Participants - Cohort 10*

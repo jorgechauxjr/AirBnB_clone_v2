@@ -62,3 +62,4 @@ Initial Authors (V1):
 Authors (V2)
 * Arturo Victoria Rincón | [GitHub](https://github.com/arvicrin) | [Twitter](https://twitter.com/arvicrin) |
 * Jorge Chaux Jr | [GitHub](https://github.com/jorgechauxjr) | [Twitter](https://twitter.com/jorgechauxjr) |
+  *Holberton School Participants - Cohort 10*

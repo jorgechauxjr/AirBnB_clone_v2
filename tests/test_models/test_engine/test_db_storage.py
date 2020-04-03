@@ -52,14 +52,6 @@ class TestDataBaseStorage(unittest.TestCase):
 
     @unittest.skipIf(getenv("HBNB_TYPE_STORAGE") != 'db',
                      "Don´t run if is file storage")
-    def test_db_storage_module_docstring(self):
-        """Test for the db_storage.py module docstring"""
-
-        self.assertIsNot(db_storage.__doc__, None,
-                         "db_storage.py needs a docstring")
-
-    @unittest.skipIf(getenv("HBNB_TYPE_STORAGE") != 'db',
-                     "Don´t run if is file storage")
     def test_pep8_DataBaseStorage(self):
         """Tests pep8 style"""
         style = pep8.StyleGuide(quiet=True)

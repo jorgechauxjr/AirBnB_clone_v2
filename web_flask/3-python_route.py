@@ -6,6 +6,7 @@
     /: Displays 'Hello HBNB!'
     /hbnb: display HBNB
     /c/<text>: Displays 'C' followed by the value of <text>.
+    /python/(<text>): Displays 'Python' followed by the value of <text>.
 """
 from flask import Flask
 app = Flask(__name__)
@@ -25,6 +26,12 @@ def hbnb():
 @app.route("/c/<text>")
 def c(text):
     return "C " + text.replace("_", " ")
+
+
+@app.route("/python/")
+@app.route("/python/<text>")
+def python(text="is cool"):
+    return "Python " + text.replace("_", " ")
 
 
 if __name__ == '__main__':
